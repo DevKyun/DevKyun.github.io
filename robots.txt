@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://devkyun.github.io/sitemap.xml
+Sitemap: http://DevKyun.github.io/sitemap.xml
