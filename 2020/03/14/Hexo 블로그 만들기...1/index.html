@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
 
     
 
@@ -10,7 +10,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="Hexo,Markdown,Github" />
+    <meta name="keywords" content="Hexo,Markdown,Github">
     
     <meta name="description" content="1) 서론취업 준비로 이것저것 준비하다 보니 블로그에 눈이 가서부랴부랴 마크다운 작성법이랑 이것저것 알아보면서 저처럼정적 페이지 블로그 생성을 필요하신 분을 위해 글을 한번 써봤습니다!~처음 글을 쓰는 거라 불편하셔도… 참아주셔요 ㅠㅠ 2) Hexo란?Hexo란 Node.js기반 정적 사이트 생성기입니다.그럼 정적 사이트 생성기란… 뭘까요?? 말 그대로 정">
 <meta property="og:type" content="article">
@@ -31,7 +31,7 @@
     
 
     
-        <link rel="alternate" href="/" title="KyunLog" type="application/atom+xml" />
+        <link rel="alternate" href="/" title="KyunLog" type="application/atom+xml">
     
 
     
@@ -69,7 +69,7 @@
 
 
 <meta name="generator" content="Hexo 4.2.0"></head>
-
+</html>
 <body>
     <div id="wrap">
         <header id="header">
@@ -91,13 +91,13 @@
                     <div class="nav-container-inner">
                         <ul id="main-nav">
                             
-                                <li class="main-nav-list-item" >
+                                <li class="main-nav-list-item">
                                     <a class="main-nav-list-link" href="/">홈</a>
                                 </li>
                             
                                         <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Blog/">Blog</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Blog/Hexo/">Hexo</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Cloud/">Cloud</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Cloud/AWS/">AWS</a></li></ul></li></ul>
                                     
-                                <li class="main-nav-list-item" >
+                                <li class="main-nav-list-item">
                                     <a class="main-nav-list-link" href="/about/index.html">About</a>
                                 </li>
                             
@@ -106,14 +106,14 @@
                             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="검색" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <input type="text" class="ins-search-input" placeholder="Type something...">
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -224,7 +224,7 @@
 <p>이렇게 보고나니.. Node.js를 자주 사용하는 저로써 선택은 하나뿐입니다.</p>
 <h2 id="Hexo-너로-정했따"><a href="#Hexo-너로-정했따" class="headerlink" title="Hexo 너로 정했따!!!"></a><strong>Hexo 너로 정했따!!!</strong></h2><h3 id="3-Hexo-설치"><a href="#3-Hexo-설치" class="headerlink" title="3) Hexo 설치"></a>3) Hexo 설치</h3><p>먼저 Hexo가 Node.js 기반이기 때문에 Node.js 와 해당 기반의 패키지 관리및 배포를 해주는<br>npm 설치가 필요합니다.</p>
 <ul>
-<li>Node.js + npm 설치 <a href="https://nodejs.org/en/download" target="_blank" rel="noopener">https://nodejs.org/en/download</a><br><del>(Node.js 설치를 하면 당연히 npm이 따라 오쥬</del>)~</li>
+<li>Node.js + npm 설치 <a href="https://nodejs.org/en/download" target="_blank" rel="external nofollow noopener noreferrer">https://nodejs.org/en/download</a><br><del>(Node.js 설치를 하면 당연히 npm이 따라 오쥬</del>)~</li>
 <li>Git 레퍼지토리 생성(로컬 서버에서는 필요없음)</li>
 </ul>
 <p>*필자의 환경</p>
@@ -238,7 +238,7 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">├─_config.yml # 페이지 설정 파일</span><br><span class="line">├─ package.json # 어플리케이션 데이터 파일</span><br><span class="line">├─ scaffolds # 생성시 참조되는 레이아웃 폴더 [page.md, post.md, draft.md]</span><br><span class="line">├─ source <span class="meta"># html 파일로 변환되어 public/ 폴더로 이동할 웹 사이트 컨텐츠(.md) 위치</span></span><br><span class="line">|   ├─ _drafts <span class="meta"># draft 레이아웃 사용시 위치하며 generate 명령어 실행시 제외 됨(초안 문서) </span></span><br><span class="line">	       <span class="meta"># publish 명령어로 source/_posts/로 이동</span></span><br><span class="line">|   └─ _posts <span class="meta"># generate 명령어로 public/ 폴더로 이동</span></span><br><span class="line">└─ themes # 테마 설치 위치</span><br></pre></td></tr></table></figure>
 <p>이렇게 Hexo 설치와 기본적으로 프로젝트를 설치했으면 테스트를 돌려야<br>하지 않겠습니까??</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo serve -o <span class="meta"># output(-o) 브라우저에 자동으로 접속 </span></span><br><span class="line"><span class="meta"># or</span></span><br><span class="line">hexo serve #</span><br><span class="line"><span class="meta"># or</span></span><br><span class="line">hexo s #약자 사용도 됩니다.</span><br></pre></td></tr></table></figure>
-<p>로컬서버로 블로그를 생성했다면 확인은 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 여기서 하시면 됩니다.</p>
+<p>로컬서버로 블로그를 생성했다면 확인은 <a href="http://localhost:4000" target="_blank" rel="external nofollow noopener noreferrer">http://localhost:4000</a> 여기서 하시면 됩니다.</p>
 <p>다음 포스트는 블로그 <strong>“테마 변경”</strong>과 <strong>“포스트 쓰기”</strong>로뵙겠습니다.</p>
 
         </div>
@@ -247,7 +247,7 @@
 
 
 
-    <a data-url="http://devkyun.github.io/2020/03/14/Hexo%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0...1/" data-id="ck7rd8rc40000ggtqab6l1hb8" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://devkyun.github.io/2020/03/14/Hexo%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0...1/" data-id="ck7rdiuoy0004ogtq1gk78577" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -327,7 +327,7 @@
         "url": "http://DevKyun.github.io/2020/03/14/Hexo 블로그 만들기...1/",
         "description": "1) 서론취업 준비로 이것저것 준비하다 보니 블로그에 눈이 가서부랴부랴 마크다운 작성법이랑 이것저것 알아보면서 저처럼정적 페이지 블로그 생성을 필요하신 분을 위해 글을 한번 써봤습니다!~처음 글을 쓰는 거라 불편하셔도… 참아주셔요 ㅠㅠ
 2) Hexo란?Hexo란 Node.js기반 정적 사이트 생성기입니다.그럼 정적 사이트 생성기란… 뭘까요?? 말 그대로 정",
-        "wordCount": 399
+        "wordCount": 405
     }
 </script>
 
@@ -380,7 +380,7 @@
             
                 
                 <li>
-                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="external nofollow noopener noreferrer">
                         <i class="icon fa fa-github"></i>
                     </a>
                 </li>
@@ -428,7 +428,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">최근 글</h3>
         <div class="widget">
-            <ul id="recent-post" class="">
+            <ul id="recent-post" class>
                 
                     <li>
                         
@@ -542,7 +542,7 @@
             <ul>
                 
                     <li>
-                        <a href="http://hexo.io" target="_blank" rel="noopener">Hexo</a>
+                        <a href="http://hexo.io" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>
                     </li>
                 
             </ul>
@@ -568,7 +568,7 @@
                 </h1>
                 <p>&copy; 2020 Kim Min Kyun</p>
                 
-                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                <p>Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank" rel="external nofollow noopener noreferrer">PPOffice</a></p>
                 
             </div>
             <div class="footer-plugins">
@@ -649,4 +649,4 @@
 
     </div>
 </body>
-</html>
+
